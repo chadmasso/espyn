@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
     name = 'espyn',
     packages = ['espyn'],
-    version = '0.0.1',
+    version = '0.0.2',
     description = 'ESPN Python API',
     author='Chad Masso',
     author_email='chad.m.masso@gmail.com',
