@@ -30,11 +30,17 @@ class ESPN(object):
         else:
             raise("%s - %s"%(results['code'], results['message']))
             
-    # example usage
-    # headlines(sport = "football", league = "nfl", date = "20120201")
-    # excepted fields are sport, league, date, team, athlete 
-    
+
     def headlines(self, **params):
+        """Provides an interface for getting data from the headlines api
+        Returns Dictionary of results
+
+        :param sport: (optional) Name of sport
+        :param league: (optional) Name of league
+        :param date: (optional) String date in YYYYMMDD format
+        :param athlete: (optional) Id of athlete
+        :param team: (optional) Id of team
+        """
         # construct resource
         resources = ['sports']
         sport = params.get('sport')
